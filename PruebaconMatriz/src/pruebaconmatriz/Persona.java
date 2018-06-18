@@ -15,14 +15,24 @@ public class Persona {
     private String nombre;
     String nombre2;
     int vidas;
+    String ganador;
+    int vidas2;
 
-   
-
-    public Persona(int tiempo, String nombre, String nombre2, int vidas) {
+    public Persona(int tiempo, String nombre, String nombre2, int vidas, int vidas2, String ganador) {
         this.tiempo = tiempo;
         this.nombre = nombre;
         this.nombre2 = nombre2;
         this.vidas = vidas;
+        this.vidas2 = vidas2;
+        this.ganador = ganador;
+    }
+
+    public String getGanador() {
+        return ganador;
+    }
+
+    public void setGanador(String ganador) {
+        this.ganador = ganador;
     }
 
     public int getTiempo() {
@@ -57,6 +67,4 @@ public class Persona {
         this.vidas = vidas;
     }
 
-
-   
 }
